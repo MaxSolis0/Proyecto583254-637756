@@ -169,6 +169,7 @@ int main()
             break;
         case 3:
             cout << "¡Gracias por su preferencia!"<<endl;
+            system("pause");
             break;
         default:
             cout << "Por favor da una opcion valida (1, 2, o 3)"<<endl;
