@@ -115,13 +115,14 @@ void divisa()
     }
     Total[monedaOut-1][2]=Total[monedaOut-1][2] + CantidadNueva;
     Transacciones = Transacciones + 1;
-    TotalUSD = TotalUSD + Cantidad*cambios[monedaIn-1][1];
+    TotalUSD = TotalUSD + Cantidad*cambios[monedaIn-1][0];
     cout << Cantidad << " " << Ticker[monedaIn-1] <<" son: " << CantidadNueva << " " << Ticker[monedaOut-1]<<endl;
 }
 
 void TotalScreen()
 {
     int ancho = 11;
+    system("cls");
     float cargoPorc, cargo;
     cout << "Total de entrada" << endl;
     for (int i=0; i<5; i++)
